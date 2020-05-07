@@ -6,16 +6,11 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def input_to_index(user_input)
-   user_input.to_i - 1
+def input_to_index(input_user)
+  input_user to.i()-1
 end
 
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-def update_array_at_with(array, index, value)
-  player_one = "X"
-  player_two = "O"
-  array[index] = value
-end
-
-def move(board, 2, player_one)
-end
+def move(board, index, player_one = "X")
+  board[index] = player_one
+  return board
+end 
